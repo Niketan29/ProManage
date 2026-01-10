@@ -30,7 +30,6 @@ export default function Overview() {
         const projects = Array.isArray(projectsRes.data) ? projectsRes.data : [];
         setProjectsCount(projects.length);
 
-        // ✅ Fetch tasks for each project
         const tasksArr = [];
         for (const p of projects) {
           const tRes = await getTasksApi(p._id);
@@ -81,13 +80,11 @@ export default function Overview() {
         )}
       </div>
 
-      {/* Stat Cards */}
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         <StatCard label="Projects" value={projectsCount} />
         <StatCard label="Total Tasks" value={stats.totalTasks} />
       </div>
 
-      {/* Status split */}
       <div className="card p-6">
         <h3 className="font-bold text-gray-900">Task Status Split</h3>
         <div className="mt-4 grid gap-4 sm:grid-cols-3">

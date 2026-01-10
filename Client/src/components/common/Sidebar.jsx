@@ -5,7 +5,6 @@ const linkBase = "block px-4 py-3 rounded-xl text-sm font-semibold transition";
 export default function Sidebar({ open, onClose }) {
   return (
     <>
-      {/* Mobile overlay */}
       {open && (
         <div
           className="fixed inset-0 bg-black/30 z-40 md:hidden"
@@ -13,7 +12,6 @@ export default function Sidebar({ open, onClose }) {
         />
       )}
 
-      {/* Sidebar */}
       <aside
         className={`fixed md:static z-50 top-0 left-0 h-full w-72 bg-white border-r p-4
         transform transition-transform duration-200

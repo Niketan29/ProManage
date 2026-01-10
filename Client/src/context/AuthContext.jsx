@@ -11,25 +11,21 @@ export const AuthProvider = ({ children }) => {
     return stored ? JSON.parse(stored) : null;
   });
 
-  // ✅ LOGIN
   const login = async (data) => {
     const res = await loginUser(data);
 
     const newToken = res.data.token;
     const newUser = res.data.user;
 
-    // save to localStorage
     setToken(newToken);
     localStorage.setItem("user", JSON.stringify(newUser));
 
-    // save to state
     setTokenState(newToken);
     setUser(newUser);
 
     return res;
   };
 
-  // ✅ LOGOUT
   const logout = () => {
     removeToken();
     localStorage.removeItem("user");
@@ -37,7 +33,6 @@ export const AuthProvider = ({ children }) => {
     setUser(null);
   };
 
-  // ✅ If token removed manually, auto cleanup user
   useEffect(() => {
     if (!token) {
       localStorage.removeItem("user");

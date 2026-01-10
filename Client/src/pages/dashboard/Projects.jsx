@@ -65,7 +65,6 @@ export default function Projects() {
 
   return (
     <div className="space-y-6">
-      {/* Heading */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <div>
           <h2 className="text-2xl font-bold text-gray-900">Projects</h2>
@@ -88,7 +87,6 @@ export default function Projects() {
         </div>
       )}
 
-      {/* Create project form */}
       <div className="bg-white rounded-2xl shadow p-4 sm:p-6">
         <h3 className="font-bold text-gray-900 mb-4">Create New Project</h3>
 
@@ -119,7 +117,6 @@ export default function Projects() {
         </form>
       </div>
 
-      {/* Projects list */}
       <div className="bg-white rounded-2xl shadow p-4 sm:p-6">
         <h3 className="font-bold text-gray-900 mb-4">Your Projects</h3>
 

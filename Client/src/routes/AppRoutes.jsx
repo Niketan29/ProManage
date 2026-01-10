@@ -34,44 +34,4 @@ export default function AppRoutes() {
   );
 }
 
-// function Overview() {
-//   const stats = [
-//     { label: "Projects", value: "Manage all projects easily" },
-//     { label: "Tasks", value: "Track tasks per project" },
-//     { label: "Productive", value: "Stay consistent daily" },
-//   ];
 
-//   return (
-//     <div className="space-y-6">
-//       <div className="card p-6">
-//         <h2 className="text-2xl font-extrabold text-gray-900">
-//           Dashboard Overview
-//         </h2>
-//         <p className="text-gray-600 mt-2 text-sm">
-//           Welcome to ProManage. Create projects and manage tasks efficiently.
-//         </p>
-//       </div>
-
-//       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-//         {stats.map((s) => (
-//           <div key={s.label} className="card p-5 hover:shadow-md transition">
-//             <p className="text-xs font-bold uppercase tracking-wider text-gray-500">
-//               {s.label}
-//             </p>
-//             <p className="mt-2 text-sm font-semibold text-gray-900">
-//               {s.value}
-//             </p>
-//           </div>
-//         ))}
-//       </div>
-
-//       <div className="card p-6">
-//         <h3 className="font-bold text-gray-900">Tip 💡</h3>
-//         <p className="text-gray-600 text-sm mt-2">
-//           Use the Projects section to add new projects and open tasks inside
-//           them.
-//         </p>
-//       </div>
-//     </div>
-//   );
-// }

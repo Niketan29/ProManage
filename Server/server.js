@@ -16,10 +16,10 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://promanage.vercel.app"
+  "https://pro-manage-pi.vercel.app/"
 ];
 
-// core middlewares
+//  middlewares
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin) return callback(null, true);
@@ -38,7 +38,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/projects", projectRoutes);
 app.use("/api/tasks", taskRoutes);
 
-// error middleware (ALWAYS LAST)
+// error middleware
 app.use(errorMiddleware);
 
 const PORT = process.env.PORT || 5000;

@@ -7,7 +7,6 @@ export default function Navbar({ onMenuClick }) {
     <header className="sticky top-0 z-40 bg-white border-b">
       <div className="px-4 sm:px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          {/* Mobile menu button */}
           <button
             onClick={onMenuClick}
             className="md:hidden p-2 rounded-lg hover:bg-gray-100"

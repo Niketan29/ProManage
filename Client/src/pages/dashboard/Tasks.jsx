@@ -35,7 +35,6 @@ export default function Tasks() {
 
   useEffect(() => {
     loadTasks();
-    // eslint-disable-next-line
   }, [projectId]);
 
   const handleCreateTask = async (e) => {
@@ -75,7 +74,6 @@ export default function Tasks() {
 
   return (
     <div className="space-y-8 max-w-7xl mx-auto">
-      {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
@@ -106,7 +104,6 @@ export default function Tasks() {
         </div>
       )}
 
-      {/* Create Task */}
       <div className="bg-white rounded-2xl shadow p-4 sm:p-6">
         <h3 className="font-bold text-gray-900 mb-4">Create New Task</h3>
 
@@ -140,7 +137,6 @@ export default function Tasks() {
         </form>
       </div>
 
-      {/* Task List */}
       <div className="bg-white rounded-2xl shadow p-4 sm:p-6">
         <h3 className="font-bold text-gray-900 mb-4">Task List</h3>
 
