@@ -16,7 +16,7 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://pro-manage-pi.vercel.app/"
+  "https://pro-manage-pi.vercel.app"
 ];
 
 //  middlewares
@@ -28,6 +28,7 @@ app.use(cors({
   },
   credentials: true
 }));
+app.options("*", cors());
 app.use(express.json());
 
 // routes
