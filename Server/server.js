@@ -35,6 +35,10 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("ProManage API is running ✅");
 });
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "ok" });
+});
+
 app.use("/api/auth", authRoutes);
 app.use("/api/projects", projectRoutes);
 app.use("/api/tasks", taskRoutes);
